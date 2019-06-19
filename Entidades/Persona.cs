@@ -21,7 +21,7 @@ namespace TareaTest.Entidades
         public string Correo { get; set; }
         public string Sexo { get; set; }
         public int Idimagen { get; set; }
-        public int Direccion { get; set; }
+        public string Direccion { get; set; }
         public int Idtipopersona { get; set; }
 
         public Persona()
@@ -36,7 +36,7 @@ namespace TareaTest.Entidades
             this.Correo = string.Empty;
             this.Sexo = string.Empty;
             this.Idimagen = 0;
-            this.Direccion = 0;
+            this.Direccion = string.Empty; ;
             this.Idtipopersona = 0;
 
         }
