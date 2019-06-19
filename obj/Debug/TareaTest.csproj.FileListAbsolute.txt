@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\TareaTest\bin\Debug\TareaTest.exe.config
+C:\Users\user\source\repos\TareaTest\bin\Debug\TareaTest.exe
+C:\Users\user\source\repos\TareaTest\bin\Debug\TareaTest.pdb
+C:\Users\user\source\repos\TareaTest\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\TareaTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\TareaTest\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\TareaTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.csprojAssemblyReference.cache
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.Properties.Resources.resources
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.csproj.GenerateResource.cache
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.csproj.CopyComplete
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.exe
+C:\Users\user\source\repos\TareaTest\obj\Debug\TareaTest.pdb
