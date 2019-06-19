@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace TareaTest.Entidades
 {
-   public class Unidadmedida
+   public class UnidadMedida
     {
         [Key]
         public int Idunidadmedida { get; set; }
         public string Nombreunidad { get; set; }
 
-        public Unidadmedida()
+        public UnidadMedida()
         {
             this.Idunidadmedida = 0;
             this.Nombreunidad = string.Empty;

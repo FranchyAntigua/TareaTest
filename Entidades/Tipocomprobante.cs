@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace TareaTest.Entidades
 {
-    public class Tipocomprobante
+    public class TipoComprobante
     {
 
         [Key]
 
-        public int tipocomprobante { get; set; }
+        public int Idtipocomprobante { get; set; }
         public string Nombrecomprobante { get; set; }
 
-        public Tipocomprobante()
+        public TipoComprobante()
         {
 
-            this.tipocomprobante = 0;
+            this.Idtipocomprobante = 0;
             this.Nombrecomprobante = string.Empty;
 
         }

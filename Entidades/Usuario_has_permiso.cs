@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TareaTest.Entidades
 {
-    class Usuario_has_permiso
+    public class Usuario_has_permiso
     {
         [Key]
         public int Idusuario { get; set; }

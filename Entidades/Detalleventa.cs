@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TareaTest.Entidades
 {
-    public class Detalleventa
+    public class DetalleVenta
     {
         [Key]
         public int Iddetalleventa { get; set; }
@@ -18,7 +18,7 @@ namespace TareaTest.Entidades
         public double Descuentounidad { get; set; }
         public double Total { get; set; }
 
-        public Detalleventa()
+        public DetalleVenta()
         {
             this.Iddetalleventa = 0;
             this.Idventa = 0;

@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace TareaTest.Entidades
 {
-    public class Tipopersona
+    public class TipoPersona
     {
         [Key]
         public int IdTipoPersona { get; set; }
         public string Nombre { get; set; }
 
-        public Tipopersona()
+        public TipoPersona()
         {
             this.IdTipoPersona = 0;
             this.Nombre = string.Empty;

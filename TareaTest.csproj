@@ -59,8 +59,8 @@
     <Compile Include="Entidades\Categoria.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Compra.cs" />
-    <Compile Include="Entidades\Detallecompra.cs" />
-    <Compile Include="Entidades\Detalleventa.cs" />
+    <Compile Include="Entidades\DetalleCompra.cs" />
+    <Compile Include="Entidades\DetalleVenta.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Estado.cs" />
     <Compile Include="Entidades\Imagen.cs" />
@@ -70,9 +70,9 @@
     <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Proveedor.cs" />
-    <Compile Include="Entidades\Tipocomprobante.cs" />
-    <Compile Include="Entidades\Tipopersona.cs" />
-    <Compile Include="Entidades\Unidadmedida.cs" />
+    <Compile Include="Entidades\TipoComprobante.cs" />
+    <Compile Include="Entidades\TipoPersona.cs" />
+    <Compile Include="Entidades\UnidadMedida.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Entidades\Usuario_has_permiso.cs" />
     <Compile Include="Entidades\Venta.cs" />

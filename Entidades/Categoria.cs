@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TareaTest.Entidades
 {
-    class Categoria
+      public class Categoria
     {
         [Key]
         public int Idcategoria { get; set; }
