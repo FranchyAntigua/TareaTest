@@ -33,5 +33,6 @@ namespace TareaTest.Entidades
             this.Costoventa = 0;
 
         }
+
     }
 }

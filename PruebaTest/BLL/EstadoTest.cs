@@ -17,7 +17,7 @@ namespace PruebaTest.BLL
         public void GuardarTest()
         {
             Repositorio<Estado> repositorio = new Repositorio<Estado>();
-            bool paso = false;
+            bool paso = false; 
             Estado e = new Estado();
             e.IdEstado = 2;
             e.FechaInicio = DateTime.Now;
