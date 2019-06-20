@@ -18,6 +18,7 @@ namespace TareaTest.Entidades
             public double Costocompra{ get; set; }
             public double Stock { get; set; }
             public int Idunidadmedida { get; set; }
+            public int Idimagen { get; set; }
             public int Idcategoria{ get; set; }
             public int Idmarca { get; set; }
             public int Idmodelo { get; set; }
@@ -31,6 +32,7 @@ namespace TareaTest.Entidades
                 this.Costocompra = 0;
                 this.Stock = 0;
                 this.Idunidadmedida = 0;
+                this.Idimagen = 0;
                 this.Idcategoria = 0;
                 this.Idmarca = 0;
                 this.Idmodelo = 0;
