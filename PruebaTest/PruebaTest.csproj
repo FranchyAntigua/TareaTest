@@ -61,6 +61,7 @@
     <Compile Include="BLL\ClienteTest.cs" />
     <Compile Include="BLL\CompraTest.cs" />
     <Compile Include="BLL\DetallecompraTest.cs" />
+    <Compile Include="BLL\DetalleVentaTest.cs" />
     <Compile Include="BLL\EmpleadoTest.cs" />
     <Compile Include="BLL\EstadoTest.cs" />
     <Compile Include="BLL\ImagenTest.cs" />
