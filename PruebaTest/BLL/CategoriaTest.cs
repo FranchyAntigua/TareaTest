@@ -21,20 +21,20 @@ namespace PruebaTest.BLL
             c.Descripcion= "Gerente";
 
             Repositorio<Categoria> repositorio = new Repositorio<Categoria>();
-            bool paso = false;
-            paso = repositorio.Guardar(c);
-            Assert.AreEqual(true, paso);
+            bool estado = false;
+            estado = repositorio.Guardar(c);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<Categoria> repositorio = new Repositorio<Categoria>();
-            bool paso = false;
+            bool estado = false;
             Categoria c = repositorio.Buscar(1);
             c.Descripcion = "Usuario";
-            paso = repositorio.Modificar(c);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(c);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
@@ -54,13 +54,13 @@ namespace PruebaTest.BLL
             Assert.IsNotNull(lista);
         }
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Categoria> repositorio = new Repositorio<Categoria>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<Categoria> repositorio = new Repositorio<Categoria>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
+        }
     }
 }

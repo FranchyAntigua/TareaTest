@@ -41,11 +41,11 @@ namespace PruebaTest.BLL
         public void ModificarTest()
         {
             Repositorio<Persona> repositorio = new Repositorio<Persona>();
-            bool paso = false;
+            bool estado = false;
             Persona p = repositorio.Buscar(1);
             p.Nombre = "franchy";
-            paso = repositorio.Modificar(p);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(p);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
@@ -66,13 +66,13 @@ namespace PruebaTest.BLL
         }
 
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Persona> repositorio = new Repositorio<Persona>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<Persona> repositorio = new Repositorio<Persona>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
+        }
     }
 }

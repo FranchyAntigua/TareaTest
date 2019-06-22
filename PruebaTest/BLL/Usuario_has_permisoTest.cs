@@ -20,20 +20,20 @@ namespace PruebaTest.BLL
             u.Idpermiso = 1;
 
             Repositorio<Usuario_has_permiso> repositorio = new Repositorio<Usuario_has_permiso>();
-            bool paso = false;
-            paso = repositorio.Guardar(u);
-            Assert.AreEqual(true, paso);
+            bool estado = false;
+            estado = repositorio.Guardar(u);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<Usuario_has_permiso> repositorio = new Repositorio<Usuario_has_permiso>();
-            bool paso = false;
+            bool estado = false;
             Usuario_has_permiso u = repositorio.Buscar(1);
              u.Idpermiso = 2;
-            paso = repositorio.Modificar(u);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(u);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
@@ -53,14 +53,14 @@ namespace PruebaTest.BLL
             Assert.IsNotNull(lista);
         }
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Usuario_has_permiso> repositorio = new Repositorio<Usuario_has_permiso>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<Usuario_has_permiso> repositorio = new Repositorio<Usuario_has_permiso>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
+        }
 
     }
 }

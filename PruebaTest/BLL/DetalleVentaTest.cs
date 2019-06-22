@@ -35,11 +35,37 @@ namespace PruebaTest.BLL
         public void ModificarTest()
         {
             Repositorio<DetalleVenta> repositorio = new Repositorio<DetalleVenta>();
-            bool paso = false;
+            bool estado = false;
             DetalleVenta dv = repositorio.Buscar(1);
             dv.Total = 260;
-            paso = repositorio.Modificar(dv);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(dv);
+            Assert.AreEqual(true, estado);
+        }
+
+        [TestMethod()]
+        public void BuscarTest()
+        {
+            Repositorio<DetalleVenta> repositorio = new Repositorio<DetalleVenta>();
+            DetalleVenta t = repositorio.Buscar(1);
+            Assert.IsNotNull(t);
+        }
+
+        [TestMethod()]
+        public void GetListTest()
+        {
+            Repositorio<DetalleVenta> repositorio = new Repositorio<DetalleVenta>();
+            List<DetalleVenta> lista = new List<DetalleVenta>();
+            lista = repositorio.GetList(t => true);
+            Assert.IsNotNull(lista);
+        }
+
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<DetalleVenta> repositorio = new Repositorio<DetalleVenta>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
         }
     }
 }

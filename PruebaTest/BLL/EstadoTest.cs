@@ -17,28 +17,28 @@ namespace PruebaTest.BLL
         public void GuardarTest()
         {
             Repositorio<Estado> repositorio = new Repositorio<Estado>();
-            bool paso = false; 
+            bool estado = false; 
             Estado e = new Estado();
             e.IdEstado = 2;
             e.FechaInicio = DateTime.Now;
             e.FechaFin = DateTime.Now;
             e.estado = "Excelente";
 
-            paso = repositorio.Guardar(e);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Guardar(e);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<Estado> repositorio = new Repositorio<Estado>();
-            bool paso = false;
+            bool estado = false;
             Estado e = repositorio.Buscar(2);
             e.FechaFin = DateTime.Now;
             e.estado = "Mas o menos";
 
-            paso = repositorio.Modificar(e);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(e);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
@@ -58,13 +58,13 @@ namespace PruebaTest.BLL
             Assert.IsNotNull(lista);
         }
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Estado> repositorio = new Repositorio<Estado>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<Estado> repositorio = new Repositorio<Estado>();
+            bool estado = false;
+            estado = repositorio.Eliminar(2);
+            Assert.AreEqual(true, estado);
+        }
     }
 }

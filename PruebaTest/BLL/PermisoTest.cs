@@ -21,20 +21,20 @@ namespace PruebaTest.BLL
             p.Funcionalidad= "Soda";
 
             Repositorio<Permiso> repositorio = new Repositorio<Permiso>();
-            bool paso = false;
-            paso = repositorio.Guardar(p);
-            Assert.AreEqual(true, paso);
+            bool estado = false;
+            estado = repositorio.Guardar(p);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<Permiso> repositorio = new Repositorio<Permiso>();
-            bool paso = false;
+            bool estado = false;
             Permiso p = repositorio.Buscar(2);
             p.Descripcion = " Activo";
-            paso = repositorio.Modificar(p);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(p);
+            Assert.AreEqual(true, estado);
         }
         [TestMethod()]
         public void BuscarTest()
@@ -54,14 +54,14 @@ namespace PruebaTest.BLL
         }
 
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Permiso> repositorio = new Repositorio<Permiso>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(2);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<Permiso> repositorio = new Repositorio<Permiso>();
+            bool estado = false;
+            estado = repositorio.Eliminar(2);
+            Assert.AreEqual(true, estado);
+        }
 
     }
 }

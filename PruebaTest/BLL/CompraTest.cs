@@ -24,20 +24,20 @@ namespace PruebaTest.BLL
             c.Costocomprobante = 1;
 
             Repositorio<Compra> repositorio = new Repositorio<Compra>();
-            bool paso = false;
-            paso = repositorio.Guardar(c);
-            Assert.AreEqual(true, paso);
+            bool estado = false;
+            estado = repositorio.Guardar(c);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<Compra> repositorio = new Repositorio<Compra>();
-            bool paso = false;
+            bool estado = false;
             Compra c = repositorio.Buscar(1);
             c.Idusuario = 0;
-            paso = repositorio.Modificar(c);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(c);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
@@ -57,13 +57,13 @@ namespace PruebaTest.BLL
             Assert.IsNotNull(lista);
         }
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Compra> repositorio = new Repositorio<Compra>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<Compra> repositorio = new Repositorio<Compra>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
+        }
     }
 }

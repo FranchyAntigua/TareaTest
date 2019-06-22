@@ -20,20 +20,20 @@ namespace PruebaTest.BLL
             t.Nombrecomprobante = "1234";
 
             Repositorio<TipoComprobante> repositorio = new Repositorio<TipoComprobante>();
-            bool paso = false;
-            paso = repositorio.Guardar(t);
-            Assert.AreEqual(true, paso);
+            bool estado = false;
+            estado = repositorio.Guardar(t);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<TipoComprobante> repositorio = new Repositorio<TipoComprobante>();
-            bool paso = false;
+            bool estado = false;
             TipoComprobante t = repositorio.Buscar(1);
             t.Nombrecomprobante = "23";
-            paso = repositorio.Modificar(t);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(t);
+            Assert.AreEqual(true, estado);
         }
 
 
@@ -54,14 +54,14 @@ namespace PruebaTest.BLL
             Assert.IsNotNull(lista);
         }
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<Cargo> repositorio = new Repositorio<Cargo>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<TipoComprobante> repositorio = new Repositorio<TipoComprobante>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
+        }
 
     }
 }

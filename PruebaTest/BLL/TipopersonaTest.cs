@@ -22,19 +22,19 @@ namespace PruebaTest.BLL
             
 
             Repositorio<TipoPersona> repositorio = new Repositorio<TipoPersona>();
-            bool paso = false;
-            paso = repositorio.Guardar(t);
-            Assert.AreEqual(true, paso);
+            bool estado = false;
+            estado = repositorio.Guardar(t);
+            Assert.AreEqual(true, estado);
         }
         [TestMethod()]
         public void ModificarTest()
         {
             Repositorio<TipoPersona> repositorio = new Repositorio<TipoPersona>();
-            bool paso = false;
+            bool estado = false;
             TipoPersona t = repositorio.Buscar(1);
             t.Nombre = "Maria";
-            paso = repositorio.Modificar(t);
-            Assert.AreEqual(true, paso);
+            estado = repositorio.Modificar(t);
+            Assert.AreEqual(true, estado);
         }
 
         [TestMethod()]
@@ -55,14 +55,14 @@ namespace PruebaTest.BLL
         }
 
 
-        //[TestMethod()]
-        //public void EliminarTest()
-        //{
-        //    Repositorio<TipoPersona> repositorio = new Repositorio<TipoPersona>();
-        //    bool paso = false;
-        //    paso = repositorio.Eliminar(1);
-        //    Assert.AreEqual(true, paso);
-        //}
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Repositorio<TipoPersona> repositorio = new Repositorio<TipoPersona>();
+            bool estado = false;
+            estado = repositorio.Eliminar(1);
+            Assert.AreEqual(true, estado);
+        }
 
     }
 }
